@@ -23,7 +23,7 @@ bot.on("message", async (msg) => {
     await bot.sendMessage(chatId, 'Щоб зробити замовлення натисніть кнопку нижче', {
         reply_markup: {
             inline_keyboard: [
-                [{text: 'Зробити замовлення', web_app: {url: webAppUrl}}]
+                [{text: 'Зробити замовлення', web_app: {url: webAppUrl + "/form"}}]
             ]
         }
     })
