@@ -1,7 +1,7 @@
 const TelegramBot = require("node-telegram-bot-api");
 require("dotenv").config();
 const token = process.env.BOT_TOKEN;
-const webAppUrl = "https://mythaisushi.netlify.app/";
+const webAppUrl = process.env.WEB;
 const bot = new TelegramBot(token, { polling: true });
 const express = require("express");
 const cors = require("cors");
